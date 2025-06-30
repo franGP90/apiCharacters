@@ -24,14 +24,25 @@ export const resolvers = {
             const data = await response.json()
             return data
         },
-        /*
-        getCharacters: async (
+        
+       /* getCharacters: async (
             _:unknown,
-            {ids}:{ids: string[]}
+            {ids}:{ids: string[] | null}
         ):Promise<CharacterModel[]>=>{
-            
+            const url = `https://hp-api.onrender.com/api/characters`
+            const response = await fetch(url)
+            if(!response.ok){
+                throw new Error("Error al acceder a la api de personajes")
+            }
+
+            if(ids !== null){
+
+            }else{
+
+            }
         }
-        */
+            */
+        
     }
 
 }

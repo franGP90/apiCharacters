@@ -1,11 +1,11 @@
 export const typeDefs = `#graphql
 
-    House:{
+    House {
         name: String!,
         charater: [Character]!
     }
 
-    Character:{
+    Character {
         id:ID!,
         name:String!,
         alternate_names: [String!]!,
@@ -14,7 +14,7 @@ export const typeDefs = `#graphql
         house: House
     }
 
-    Query:{
+    Query {
         getCharacter(id:ID!):Character
         getCharacters(ids:[ID!]): [Character!]!
     }
