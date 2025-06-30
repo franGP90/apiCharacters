@@ -2,7 +2,7 @@ import { OptionalId } from "mongodb";
 
 export type House = {
      name: string;
-  characters: CharacterModel[];
+    characters: CharacterModel[];
 }
 
 export type CharacterModel = OptionalId<{
